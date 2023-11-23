@@ -11,6 +11,7 @@ Note: No longer in active development. Future MODO releases may or may not work.
 
 ## INSTRUCTIONS
 ### Installation
+- Download zip file from "Releases" section/button on this page
 - Open user content folder (available in modo system menu).  
 - Put the kit folder in the plugin folder.  
 
