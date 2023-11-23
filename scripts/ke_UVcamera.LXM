@@ -1,0 +1,6 @@
+#LXMacro#
+tool.set uv.viewProj on
+tool.viewType xyz
+tool.setAttr uv.viewProj ascal true
+tool.doApply
+tool.set uv.viewProj off

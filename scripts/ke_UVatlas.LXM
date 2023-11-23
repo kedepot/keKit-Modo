@@ -1,0 +1,7 @@
+#LXMacro#
+tool.set uv.create on
+tool.attr uv.create proj atlas
+tool.noChange
+tool.doApply
+tool.set uv.create off
+

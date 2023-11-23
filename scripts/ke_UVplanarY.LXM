@@ -1,0 +1,6 @@
+#LXMacro#
+tool.set uv.create on
+tool.setAttr uv.create proj planar
+tool.setAttr uv.create axis 1
+tool.doApply
+tool.set uv.create off

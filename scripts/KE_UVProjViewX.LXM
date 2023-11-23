@@ -1,0 +1,12 @@
+#LXMacro#
+layout.createOrClose 3DView "3D View Palette" title:"3D View" width:550 height:400 persistent:true style:palette
+view3d.projection rgt
+tool.set uv.viewProj on
+tool.viewType xyz
+tool.noChange
+tool.set uv.viewProj on
+tool.apply
+tool.set TransformMove off 0
+tool.noChange
+tool.doApply
+layout.createOrClose 3DView "3D View Palette" title:"3D View" width:550 height:400 persistent:true style:palette

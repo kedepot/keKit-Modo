@@ -1,0 +1,6 @@
+#LXMacro#
+tool.set uv.create on
+tool.attr uv.create proj barycentric
+tool.doApply
+#tool.set uv.create off
+

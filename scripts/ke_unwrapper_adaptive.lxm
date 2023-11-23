@@ -1,0 +1,42 @@
+#LXMacro#
+# Unwrapper Adaptive 1.1 - Kjell Emanunuelsson 2019.
+# Simple macro to Unwrap selected geo (edges or polys) and relax a little and rectangle if possible
+# Note: Conformal + Adaptive Version
+
+select.convert vertex
+select.connect
+select.convert polygon
+hide.unsel
+select.typeFrom edge
+
+tool.set uv.unwrap on
+tool.attr uv.unwrap iter 128
+tool.attr uv.unwrap gaps 0.2
+tool.attr uv.unwrap project planar
+tool.attr uv.unwrap pinning u
+tool.attr uv.unwrap axis y
+tool.attr uv.unwrap angle 0.0
+tool.attr uv.unwrap seal false
+tool.noChange
+tool.doApply
+tool.set uv.unwrap off
+
+select.typeFrom polygon
+tool.set uv.relax on
+tool.attr uv.relax mode lscm
+tool.attr uv.relax iter 48
+tool.doApply
+tool.set uv.relax off
+
+tool.set uv.relax on
+tool.setAttr uv.relax mode adaptive
+tool.attr uv.relax iter 36
+tool.doApply
+tool.set uv.relax off
+
+unhide
+select.drop vertex
+select.drop edge
+select.typeFrom polygon
+
+
