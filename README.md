@@ -1,5 +1,7 @@
-# keKit-Modo
-keKit Script Collection Plugin for MODO
+# keKit MODO
+![image](https://github.com/kedepot/keKit-Modo/assets/95410139/71b0ef77-9b21-460e-9a53-72c26cd2a0d6)
+
+Script Collection Plugin for MODO
 
 Last updated: Version 1.306   2023-04-27 ISO8601  
 Copyright © Kjell Emanuelsson -  MIT License  
